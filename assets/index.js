@@ -118,7 +118,7 @@ RIGHT.addEventListener("mouseleave", () => {
   CONTAINER.classList.remove("hover-right");
 });
 
-/* Whatsapp Chat Widget by www.bloggermix.com */
+
 
   
   
