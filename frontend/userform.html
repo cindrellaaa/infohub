@@ -54,6 +54,7 @@
         <a href="../index.html">Home</a>
         <a href="../index.html#services">About us</a>
         <a href="../index.html#formchoice" class="active">Get Started</a>
+        <a href="offers.html">Offers</a>
         <a href="login.html">Login</a>
       </section>
       <section class="flex_content">
@@ -69,6 +70,7 @@
       <a href="../index.html">Home</a> ·
       <a href="../index.html#services">About Us</a> ·
       <a href="../index.html#formchoice">Get Started</a> ·
+      <a href="offers.html">Offers</a> ·
       <a href="login.html">Login</a>
       <p>
         Ready to take the first step? Register today, and seamlessly connect
@@ -155,22 +157,35 @@
                   <option>...</option>
                 </select>
               </div>
-              <div class="col-12">
+              <div class="col-md-6">
                 <label for="designation" class="form-label">Designation</label>
                 <select id="designation" class="form-select">
                   <option selected>Sales Executive</option>
-                  <option>Business Development</option>
+                  <option>Doctor</option>
+                  <option>Designer</option>
                   <option>...</option>
                 </select>
               </div>
-              <div class="col-12">
+              <!-- new field -->
+              <div class="col-md-6">
+                <label for="specialization" class="form-label">
+                  Specialization
+                </label>
+                <input type="text" class="form-control" id="specialization" />
+              </div>
+              <!-- new field -->
+              <div class="col-md-6">
                 <label for="industry" class="form-label">Industry</label>
                 <select id="industry" class="form-select">
                   <option selected>Construction</option>
                   <option>Retail</option>
                   <option>Real Estate</option>
-                  <option>...</option>
+                  <option>Other</option>
                 </select>
+              </div>
+              <div class="col-md-6">
+                <label for="type" class="form-label">Type of Company</label>
+                <input type="text" class="form-control" id="type" />
               </div>
               <div class="col-md-6">
                 <label for="bcard" class="form-label">Business Card</label>
@@ -224,10 +239,22 @@
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="tc" />
                   <label class="form-check-label" for="tc">
-                    I agree to the terms and conditions.
+                    I agree to the
+                    <a href="" id="termsLink">terms and conditions.</a>
                   </label>
                 </div>
               </div>
+              <script>
+                document
+                  .getElementById("termsLink")
+                  .addEventListener("click", function (event) {
+                    event.preventDefault();
+                    window.open(
+                      "../assets/webpage/Terms&Conditions.pdf",
+                      "_blank"
+                    );
+                  });
+              </script>
               <div class="col-12">
                 <button type="submit" class="btn btn-outline-light">
                   Register
@@ -347,6 +374,7 @@
           <a href="../index.html">Home</a> ·
           <a href="../index.html#services">About Us</a> ·
           <a href="../index.html#formchoice">Get Started</a> ·
+          <a href="offers.html">Offers</a> ·
           <a href="login.html">Login</a>
         </p>
         <p class="footer-company-name">R-Tech International &copy; 2023</p>

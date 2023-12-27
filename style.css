@@ -1506,4 +1506,70 @@ a.close-chat {
   margin-bottom: -4px;
 }
 
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  font-size: 30px;
+  color: white;
+}
+
+.form .owl-carousel .owl-stage {
+  display: flex;
+  gap: 150px;
+}
+
+.form .buttons {
+  width: 100px;
+  margin-right: -100px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.form .buttons:hover {
+  background-color: var(--primary_dark);
+  color: #ffffff;
+}
+
+.owl-stage-outer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.offer-box a {
+  color: white;
+  background-color: #009688;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.offer {
+  min-height: 357px;
+  max-height: 357px;
+  background-color: #181818;
+}
+
+.offer:hover {
+  box-shadow: 3px 4px 16px 6px rgba(255, 255, 255, 0.17);
+  transform: translateY(-5px);
+  border: 2px #ff0000;
+}
+
+.offer .icon {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.offer-box h3 {
+  font-size: 19px;
+}
+
+.offer-box p {
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
